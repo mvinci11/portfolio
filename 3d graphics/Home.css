@@ -1,0 +1,1017 @@
+ .u-section-1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("images/perria_bonaria_nadir-sardinia1.jpg");
+  background-position: 43.63% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 749px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 4.5rem;
+  transition-duration: 0.5s;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  margin: 125px -30px 0 696px;
+}
+
+.u-section-1 .u-text-2 {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-scale: 1;
+  --animation-custom_in-translate_y: 0px;
+  margin: 19px 0 60px 696px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 377px;
+    background-position: 50% 25.19%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 618px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-weight: normal;
+    margin-left: 596px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 596px;
+    --animation-custom_in-opacity: 0;
+    --animation-custom_in-rotate: 0deg;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 265px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 473px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-left: 486px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 486px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 173px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 355px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-left: 396px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 396px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 71px;
+  }
+
+  .u-section-1 .u-sheet-1 {
+    min-height: 224px;
+  }
+
+  .u-section-1 .u-text-1 {
+    font-size: 1.5rem;
+    margin-left: 296px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 296px;
+  }
+}
+
+.u-section-1 .u-text-1,
+.u-section-1 .u-text-1:before,
+.u-section-1 .u-text-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-1 .u-container-layout:hover .u-text-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-container-layout.hover .u-section-1 .u-text-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+} .u-section-2 {
+  background-image: none;
+}
+
+.u-section-2 .u-sheet-1 {
+  min-height: 100px;
+} .u-section-3 {
+  border-style: solid;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/CIMITEO-BONARIA-.webp");
+}
+
+.u-section-3 .u-sheet-1 {
+  min-height: 200px;
+}
+
+.u-section-3 .u-text-1 {
+  width: 783px;
+  margin: 60px auto;
+}
+
+@media (max-width: 1199px) {
+   .u-section-3 {
+    background-position: 50% 50%;
+  }
+
+  .u-section-3 .u-sheet-1 {
+    min-height: 237px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-3 .u-text-1 {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 284px;
+  }
+
+  .u-section-3 .u-text-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 220px;
+  }
+
+  .u-section-3 .u-text-1 {
+    width: 340px;
+  }
+} .u-section-4 {
+  background-image: none;
+}
+
+.u-section-4 .u-sheet-1 {
+  min-height: 100px;
+} .u-section-5 {
+  background-image: none;
+}
+
+.u-section-5 .u-sheet-1 {
+  min-height: 1051px;
+}
+
+.u-section-5 .u-layout-wrap-1 {
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+
+.u-section-5 .u-image-1 {
+  min-height: 504px;
+  background-image: url("images/cimitero_monumentale_di_bonaria.jpeg");
+  background-position: 50% 50%;
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+}
+
+.u-section-5 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-5 .u-layout-cell-2 {
+  min-height: 519px;
+}
+
+.u-section-5 .u-container-layout-2 {
+  padding: 5px 1px 0;
+}
+
+.u-section-5 .u-text-1 {
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: 0 58px 0 0;
+}
+
+.u-section-5 .u-text-2 {
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  font-size: 1.25rem;
+  margin: 23px 0 0;
+}
+
+.u-section-5 .u-layout-cell-3 {
+  min-height: 548px;
+}
+
+.u-section-5 .u-container-layout-3 {
+  padding: 0;
+}
+
+.u-section-5 .u-text-3 {
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.u-section-5 .u-image-2 {
+  min-height: 484px;
+  background-image: url("images/Cimitero-Bonaria-1.jpg");
+  background-position: 29.05% 50%;
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+}
+
+.u-section-5 .u-container-layout-4 {
+  padding: 30px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-5 {
+    min-height: 695px;
+  }
+
+  .u-section-5 .u-sheet-1 {
+    min-height: 838px;
+  }
+
+  .u-section-5 .u-image-1 {
+    min-height: 416px;
+  }
+
+  .u-section-5 .u-layout-cell-2 {
+    min-height: 428px;
+  }
+
+  .u-section-5 .u-text-1 {
+    margin-right: 0;
+  }
+
+  .u-section-5 .u-layout-cell-3 {
+    min-height: 452px;
+  }
+
+  .u-section-5 .u-image-2 {
+    min-height: 399px;
+  }
+}
+
+@media (max-width: 991px) {
+   .u-section-5 {
+    min-height: 538px;
+  }
+
+  .u-section-5 .u-image-1 {
+    min-height: 319px;
+  }
+
+  .u-section-5 .u-layout-cell-2 {
+    min-height: 100px;
+  }
+
+  .u-section-5 .u-layout-cell-3 {
+    min-height: 100px;
+  }
+
+  .u-section-5 .u-image-2 {
+    min-height: 306px;
+  }
+}
+
+@media (max-width: 767px) {
+   .u-section-5 {
+    min-height: 997px;
+  }
+
+  .u-section-5 .u-image-1 {
+    min-height: 479px;
+  }
+
+  .u-section-5 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-5 .u-image-2 {
+    min-height: 459px;
+  }
+
+  .u-section-5 .u-container-layout-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-5 {
+    min-height: 710px;
+  }
+
+  .u-section-5 .u-image-1 {
+    min-height: 302px;
+  }
+
+  .u-section-5 .u-image-2 {
+    min-height: 289px;
+  }
+} .u-section-6 {
+  background-image: none;
+}
+
+.u-section-6 .u-sheet-1 {
+  min-height: 95px;
+} .u-section-7 {
+  border-style: solid;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/gastone-2-bonaria-750x375.jpg");
+}
+
+.u-section-7 .u-sheet-1 {
+  min-height: 210px;
+}
+
+.u-section-7 .u-text-1 {
+  background-image: none;
+  margin: 60px auto 60px 253px;
+}
+
+@media (max-width: 1199px) {
+   .u-section-7 {
+    background-position: 50% 11.28%;
+  }
+
+  .u-section-7 .u-sheet-1 {
+    min-height: 173px;
+  }
+
+  .u-section-7 .u-text-1 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 133px;
+  }
+
+  .u-section-7 .u-text-1 {
+    margin-left: 194px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 100px;
+  }
+
+  .u-section-7 .u-text-1 {
+    margin-left: 146px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-7 .u-sheet-1 {
+    min-height: 63px;
+  }
+
+  .u-section-7 .u-text-1 {
+    margin-left: 92px;
+  }
+} .u-section-8 {
+  background-image: none;
+}
+
+.u-section-8 .u-sheet-1 {
+  min-height: 668px;
+}
+
+.u-section-8 .u-text-1 {
+  font-weight: normal;
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: 54px 63px 0 auto;
+}
+
+.u-section-8 .u-text-2 {
+  font-size: 1.125rem;
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: 28px 0 0 551px;
+}
+
+.u-section-8 .u-layout-wrap-1 {
+  width: 319px;
+  margin: -476px auto 60px 107px;
+}
+
+.u-section-8 .u-image-1 {
+  min-height: 545px;
+  background-image: url("images/index.jpeg");
+  background-position: 50% 50%;
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+}
+
+.u-section-8 .u-container-layout-1 {
+  padding: 30px 60px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-8 .u-text-2 {
+    margin-left: 351px;
+  }
+
+  .u-section-8 .u-image-1 {
+    min-height: 490px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-8 .u-text-2 {
+    margin-left: 131px;
+  }
+
+  .u-section-8 .u-container-layout-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-8 .u-text-2 {
+    margin-left: 0;
+  }
+
+  .u-section-8 .u-image-1 {
+    min-height: 1072px;
+  }
+
+  .u-section-8 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-8 .u-sheet-1 {
+    min-height: 1236px;
+  }
+
+  .u-section-8 .u-layout-wrap-1 {
+    margin-left: 21px;
+  }
+} .u-section-9 {
+  background-image: none;
+}
+
+.u-section-9 .u-sheet-1 {
+  min-height: 878px;
+}
+
+.u-section-9 .u-text-1 {
+  --animation-custom_in-translate_x: -300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: 44px auto 0 -15px;
+}
+
+.u-section-9 .u-text-2 {
+  --animation-custom_in-translate_x: -200px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  font-size: 1.25rem;
+  margin: 32px 596px 0 -15px;
+}
+
+.u-section-9 .u-gallery-1 {
+  height: 641px;
+  width: 557px;
+  margin: -668px 13px 60px auto;
+}
+
+.u-section-9 .u-carousel-item-1 {
+  margin-right: 0;
+}
+
+.u-section-9 .u-over-slide-1 {
+  min-height: 100px;
+  padding: 10px;
+}
+
+.u-section-9 .u-carousel-item-2 {
+  margin-right: 0;
+}
+
+.u-section-9 .u-over-slide-2 {
+  min-height: 100px;
+  padding: 10px;
+}
+
+.u-section-9 .u-carousel-item-3 {
+  margin-right: 0;
+}
+
+.u-section-9 .u-over-slide-3 {
+  min-height: 100px;
+  padding: 10px;
+}
+
+.u-section-9 .u-carousel-item-4 {
+  margin-right: 0;
+}
+
+.u-section-9 .u-over-slide-4 {
+  min-height: 100px;
+  padding: 10px;
+}
+
+.u-section-9 .u-carousel-item-5 {
+  margin-right: 0;
+}
+
+.u-section-9 .u-over-slide-5 {
+  min-height: 100px;
+  padding: 10px;
+}
+
+.u-section-9 .u-carousel-item-6 {
+  margin-right: 0;
+}
+
+.u-section-9 .u-over-slide-6 {
+  min-height: 100px;
+  padding: 10px;
+}
+
+.u-section-9 .u-carousel-thumbnails-1 {
+  padding: 0;
+}
+
+.u-section-9 .u-carousel-thumbnail-1 {
+  width: 100px;
+  height: 100px;
+}
+
+.u-section-9 .u-carousel-thumbnail-2 {
+  width: 100px;
+  height: 100px;
+}
+
+.u-section-9 .u-carousel-thumbnail-3 {
+  width: 100px;
+  height: 100px;
+}
+
+.u-section-9 .u-carousel-thumbnail-4 {
+  width: 100px;
+  height: 100px;
+}
+
+.u-section-9 .u-carousel-thumbnail-5 {
+  width: 100px;
+  height: 100px;
+}
+
+.u-section-9 .u-carousel-thumbnail-6 {
+  width: 100px;
+  height: 100px;
+}
+
+.u-section-9 .u-carousel-control-1 {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  right: auto;
+}
+
+.u-section-9 .u-carousel-control-2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: auto;
+  right: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-9 .u-text-1 {
+    margin-top: 91px;
+  }
+
+  .u-section-9 .u-text-2 {
+    margin-top: 25px;
+    margin-right: 396px;
+  }
+
+  .u-section-9 .u-gallery-1 {
+    margin-top: -936px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-1 {
+    width: 93px;
+    height: 93px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-2 {
+    width: 93px;
+    height: 93px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-3 {
+    width: 93px;
+    height: 93px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-4 {
+    width: 93px;
+    height: 93px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-5 {
+    width: 93px;
+    height: 93px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-6 {
+    width: 93px;
+    height: 93px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-9 .u-text-2 {
+    margin-right: 176px;
+  }
+
+  .u-section-9 .u-gallery-1 {
+    margin-top: -1160px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-9 .u-text-2 {
+    margin-right: 0;
+  }
+
+  .u-section-9 .u-gallery-1 {
+    width: 540px;
+    margin-top: -1576px;
+    margin-right: 0;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-1 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-2 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-3 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-4 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-5 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-6 {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-9 .u-text-1 {
+    margin-top: 63px;
+    margin-left: 443px;
+  }
+
+  .u-section-9 .u-text-2 {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  .u-section-9 .u-gallery-1 {
+    margin-top: -30327px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-1 {
+    width: 68px;
+    height: 68px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-2 {
+    width: 68px;
+    height: 68px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-3 {
+    width: 68px;
+    height: 68px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-4 {
+    width: 68px;
+    height: 68px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-5 {
+    width: 68px;
+    height: 68px;
+  }
+
+  .u-section-9 .u-carousel-thumbnail-6 {
+    width: 57px;
+    height: 57px;
+  }
+} .u-section-10 {
+  border-style: solid;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/monumentofunebre.png");
+}
+
+.u-section-10 .u-sheet-1 {
+  min-height: 229px;
+}
+
+.u-section-10 .u-text-1 {
+  margin: 60px auto;
+}
+
+@media (max-width: 1199px) {
+   .u-section-10 {
+    background-position: 50% 32.57%;
+  }
+
+  .u-section-10 .u-sheet-1 {
+    min-height: 189px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-10 .u-sheet-1 {
+    min-height: 145px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-10 .u-sheet-1 {
+    min-height: 109px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-10 .u-sheet-1 {
+    min-height: 69px;
+  }
+} .u-section-11 {
+  background-image: none;
+}
+
+.u-section-11 .u-sheet-1 {
+  min-height: 100px;
+} .u-section-12 {
+  background-image: none;
+}
+
+.u-section-12 .u-sheet-1 {
+  min-height: 872px;
+}
+
+.u-section-12 .u-text-1 {
+  font-weight: 400;
+  --animation-custom_in-translate_x: -300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  margin: 47px auto 0;
+}
+
+.u-section-12 .u-text-2 {
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  font-size: 1.25rem;
+  margin: 17px 18px 0;
+}
+
+.u-section-12 .u-image-1 {
+  width: 1127px;
+  height: 533px;
+  filter: brightness(0.5);
+  transition-duration: 0.5s;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  object-position: 19.66% 50%;
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  margin: 46px auto 0;
+}
+
+.u-section-12 .u-text-3 {
+  transition-duration: 0.5s;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  text-shadow: 0px 0px 0px rgba(0,0,0,0);
+  font-size: 3rem;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+  text-decoration: underline !important;
+  background-image: none;
+  margin: -293px auto 60px;
+}
+
+.u-section-12 .u-btn-1 {
+  background-image: none;
+  --animation-custom_in-translate_x: 300px;
+  --animation-custom_in-scale: 1;
+  --animation-custom_in-translate_y: 0px;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-12 .u-sheet-1 {
+    min-height: 784px;
+  }
+
+  .u-section-12 .u-text-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-12 .u-image-1 {
+    width: 940px;
+    height: 445px;
+  }
+
+  .u-section-12 .u-text-3 {
+    margin-top: -205px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-12 .u-sheet-1 {
+    min-height: 680px;
+  }
+
+  .u-section-12 .u-image-1 {
+    width: 720px;
+    height: 341px;
+  }
+
+  .u-section-12 .u-text-3 {
+    margin-top: -101px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-12 .u-sheet-1 {
+    min-height: 595px;
+  }
+
+  .u-section-12 .u-image-1 {
+    width: 540px;
+    height: 256px;
+  }
+
+  .u-section-12 .u-text-3 {
+    margin-top: -16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-12 .u-sheet-1 {
+    min-height: 373px;
+  }
+
+  .u-section-12 .u-image-1 {
+    width: 340px;
+    height: 161px;
+  }
+
+  .u-section-12 .u-text-3 {
+    margin-top: 79px;
+  }
+}
+
+.u-section-12 .u-image-1,
+.u-section-12 .u-image-1:before,
+.u-section-12 .u-image-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-12 .u-container-layout:hover .u-image-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+  opacity: 1 !important;
+}
+
+.u-container-layout.hover .u-section-12 .u-image-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+  opacity: 1 !important;
+}
+
+.u-section-12 .u-text-3,
+.u-section-12 .u-text-3:before,
+.u-section-12 .u-text-3 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-12 .u-text-3.u-text-3.u-text-3:hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) !important;
+  box-shadow: 0px 0px 0px  rgba(0,0,0,0) !important;
+  color: #d2ba8d !important;
+  text-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
+  opacity: 0.8 !important;
+}
+
+.u-section-12 .u-text-3 {
+  border-color: transparent !important;
+}
+
+.u-section-12 .u-text-3.u-text-3.u-text-3.hover {
+  transform: scale(1.1) translateX(0px) translateY(0px) !important;
+  box-shadow: 0px 0px 0px  rgba(0,0,0,0) !important;
+  color: #d2ba8d !important;
+  text-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
+  opacity: 0.8 !important;
+}
+
+.u-section-12 .u-text-3 {
+  border-color: transparent !important;
+}
+
+.u-section-12 .u-container-layout:hover .u-text-3 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-container-layout.hover .u-section-12 .u-text-3 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}

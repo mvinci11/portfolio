@@ -1,0 +1,269 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<meta content="charset=UTF-8"/>
+<title>3DHOP - Monumento funebre a Giuseppe Todde</title>
+<!--STYLESHEET-->
+<link type="text/css" rel="stylesheet" href="stylesheet/3dhop.css"/>
+<!--SPIDERGL-->
+<script type="text/javascript" src="js/spidergl.js"></script>
+<!--JQUERY-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--PRESENTER-->
+<script type="text/javascript" src="js/presenter.js"></script>
+<!--3D MODELS LOADING AND RENDERING-->
+<script type="text/javascript" src="js/nexus.js"></script>
+<script type="text/javascript" src="js/ply.js"></script>
+<!--TRACKBALLS-->
+<script type="text/javascript" src="js/trackball_turntable.js"></script>
+<script type="text/javascript" src="js/trackball_turntable_pan.js"></script>
+<script type="text/javascript" src="js/trackball_pantilt.js"></script>
+<script type="text/javascript" src="js/trackball_sphere.js"></script>
+<!--UTILITY-->
+<script type="text/javascript" src="js/init.js"></script>
+<style>
+
+    @import url('https://fonts.cdnfonts.com/css/sedan-sc');
+
+
+.bg {
+	position: absolute;
+	left: 65%;
+	top: 30%;
+	width: 30%;
+	color: white;
+	border-style: double;
+	border-color: white;
+	border-width: 4px;
+	font-family: 'Bookman Old Style', sans-serif;
+	font-size: 23px;
+	padding: 20px;
+}
+
+h1 {
+	color: white;
+	font-family: 'Sedan Sc', sans-serif;
+	font-size: 35px;
+	position: relative;
+	transform: translate(80%);
+	}
+</style>
+
+</head>
+<body>
+<div id="3dhop" class="tdhop" onmousedown="if (event.preventDefault) event.preventDefault()"><div id="tdhlg"></div>
+ <div id="toolbar">
+  <h1> Monumento funebre a Giuseppe Todde </h1>
+  <img id="home"        title="Home"                   src="skins/transparent_light/home.png"/><br/>
+<!--ZOOM-->
+  <img id="zoomin"      title="Zoom In"                src="skins/transparent_light/zoomin.png"/><br/>
+  <img id="zoomout"     title="Zoom Out"               src="skins/transparent_light/zoomout.png"/><br/>
+<!--ZOOM-->
+<!--LIGHTING-->
+  <img id="lighting_off" title="Enable Lighting"       src="skins/transparent_light/lighting_off.png" style="position:absolute; visibility:hidden;"/>
+  <img id="lighting"     title="Disable Lighting"      src="skins/transparent_light/lighting.png"/><br/>
+<!--LIGHTING-->
+<!--LIGHT-->
+  <img id="light_on"    title="Disable Light Control"  src="skins/transparent_light/lightcontrol_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="light"       title="Enable Light Control"   src="skins/transparent_light/lightcontrol.png"/><br/>
+<!--LIGHT-->
+<!--HOTSPOTS-->
+  <img id="hotspot_on" title="Hide Hotspots"         src="skins/transparent_light/pin_on.png"          style="position:absolute; visibility:hidden;"/>
+  <img id="hotspot"    title="Show Hotspots"         src="skins/transparent_light/pin.png"             /><br/>
+<!--HOTSPOTS-->
+<!--MEASURE-->
+  <img id="measure_on"  title="Disable Measure Tool"   src="skins/transparent_light/measure_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="measure"     title="Enable Measure Tool"    src="skins/transparent_light/measure.png"/><br/>
+<!--MEASURE-->
+<!--COLOR-->
+  <img id="color_on"    title="Disable Solid Color"    src="skins/transparent_light/color_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="color"       title="Enable Solid Color"     src="skins/transparent_light/color.png"/><br/>
+<!--COLOR-->
+<!--CAMERA-->
+  <img id="perspective"  title="Perspective Camera"    src="skins/transparent_light/perspective.png" style="position:absolute; visibility:hidden;"/>
+  <img id="orthographic" title="Orthographic Camera"   src="skins/transparent_light/orthographic.png"/><br/>
+<!--CAMERA-->
+<!--SCREENSHOT-->
+  <img id="screenshot" title="Save Screenshot"   src="skins/transparent_light/screenshot.png"/><br/>
+<!--SCREENSHOT-->
+<!--FULLSCREEN-->
+  <img id="full_on"     title="Exit Full Screen"       src="skins/transparent_light/full_on.png" style="position:absolute; visibility:hidden;"/>
+  <img id="full"        title="Full Screen"            src="skins/transparent_light/full.png"/>
+<!--FULLSCREEN-->
+ </div>
+
+
+<!--MEASURE-->   
+ <div id="measure-box" class="output-box">Measured length<hr/><span id="measure-output" class="output-text" onmousedown="event.stopPropagation()">0.0</span></div>
+<!--MEASURE-->
+
+<div class="bg">
+	<div>
+	<p id="descrizione"> L'opera ritrae a grandezza naturale la vedova del defunto, Luigia Oppo, rappresentata in atteggiamento di preghiera al cospetto della tomba del marito. Il dolore per la perdita traspare dallo sguardo intenso della donna, che si contrappone all'eleganza e alla compostezza della sua posa. Lo stile dell'artista colpisce per la sua teatralità, l'estrema cura nella resa dei dettagli, ma soprattutto il grande realismo che rende la figura quasi viva di fronte allo spettatore.
+	</p>
+	</div>
+ </div>
+
+
+ <canvas id="draw-canvas" style="background-image: url(skins/backgrounds/Nero6.jpg)"/>
+</div>
+</body>
+
+<script type="text/javascript">
+var presenter = null;
+
+function setup3dhop() {
+	presenter = new Presenter("draw-canvas");
+
+	presenter.setScene({
+		meshes: {
+			"mesh_1" : { url: "models/modello.nxz" },
+			"Sphere" : { url: "models/sfera.ply" }
+		},
+		modelInstances : {
+			"model_1" : { 
+				mesh  : "mesh_1",
+				color : [0.8, 0.7, 0.75]
+			}
+		},
+		spots : {
+			"croce" : {
+				mesh : "Sphere",
+				transform : { 
+					matrix: SglMat4.mul(SglMat4.translation([0.06, 1.23, -0.39]), SglMat4.scaling([ 0.02, 0.02, 0.02]))
+				},
+				color     : [0.1, 0.25, 0.7],
+				alpha     : 0.7,
+				alphaHigh : 0.5
+			},
+			"volto" : {
+				mesh : "Sphere",
+				transform : { 
+					matrix:  SglMat4.mul(SglMat4.translation([0.14, 1.53, -0.40]), SglMat4.scaling([0.02, 0.02, 0.02]))
+					},
+				color     : [0.1, 0.25, 0.7],
+				alpha     : 0.9,
+				alphaHigh : 0.3
+			},
+			"rosario" : {
+				mesh : "Sphere",
+				transform : { 
+					matrix:  SglMat4.mul(SglMat4.translation([-0.04, 0.8, -0.24]), SglMat4.scaling([0.02, 0.02, 0.02]))
+					},
+				color     : [0.1, 0.25, 0.7],
+				alpha     : 0.9,
+				alphaHigh : 0.3
+			},
+			"scialle" : {
+				mesh : "Sphere",
+				transform : { 
+					matrix:  SglMat4.mul(SglMat4.translation([0.42, 1.01, -0.3]), SglMat4.scaling([0.02, 0.02, 0.02]))
+					},
+				color     : [0.1, 0.25, 0.7],
+				alpha     : 0.9,
+				alphaHigh : 0.3
+			},
+			"capelli" : {
+				mesh : "Sphere",
+				transform : { 
+					matrix:  SglMat4.mul(SglMat4.translation([0.359, 1.5, -0.37]), SglMat4.scaling([0.02, 0.02, 0.02]))
+					},
+				color     : [0.1, 0.25, 0.7],
+				alpha     : 0.9,
+				alphaHigh : 0.3
+			}
+		},
+		trackball: {  
+			type:  TurntablePanTrackball,
+			trackOptions : {
+				startPhi      : -45.0,
+				startTheta    : 20.0,
+				startDistance : 0.5,
+				startPanX     : 0.0,
+				startPanY     : 0.0,
+				startPanZ     : 0.0,
+				minMaxPhi     : [-90, 90],
+				minMaxTheta   : [-15.0, 50.0],
+				minMaxDist    : [0.35, 3.0],
+				minMaxPanX    : [-0.8, 0.8],
+				minMaxPanY    : [-0.7, 0.7],
+				minMaxPanZ    : [-0.3, 0.3],
+			}
+		}
+	});
+	
+	presenter.animateToTrackballPosition([-45,20,0,0,0,1.9]);
+	presenter.setSpotVisibility(HOP_ALL, false, true);
+	presenter._onPickedSpot = onPickedSpot;
+
+//--MEASURE--
+	presenter._onEndMeasurement = onEndMeasure;   
+//--MEASURE--
+
+}
+
+function actionsToolbar(action) {
+	if(action=='home') { presenter.animateToTrackballPosition([-45,20,0,0,0,1.9]); 
+	document.getElementById("descrizione").innerHTML = "L'opera ritrae a grandezza naturale la vedova del defunto, Luigia Oppo, rappresentata in atteggiamento di preghiera al cospetto della tomba del marito. Il dolore per la perdita traspare dallo sguardo intenso della donna, che si contrappone all'eleganza e alla compostezza della sua posa. Lo stile dell'artista colpisce per la sua teatralità, l'estrema cura nella resa dei dettagli, ma soprattutto il grande realismo che rende la figura quasi viva di fronte allo spettatore."; }
+//--FULLSCREEN--
+	else if(action=='full'  || action=='full_on') fullscreenSwitch();
+//--FULLSCREEN--
+//--ZOOM--
+	else if(action=='zoomin') presenter.zoomIn();
+	else if(action=='zoomout') presenter.zoomOut();
+//--ZOOM--
+//--LIGHTING--
+	else if(action=='lighting' || action=='lighting_off') { presenter.enableSceneLighting(!presenter.isSceneLightingEnabled()); lightingSwitch(); }
+//--LIGHTING--
+//--LIGHT--
+	else if(action=='light' || action=='light_on') { presenter.enableLightTrackball(!presenter.isLightTrackballEnabled()); lightSwitch(); }
+//--LIGHT--
+//--CAMERA--
+	else if(action=='perspective' || action=='orthographic') { presenter.toggleCameraType(); cameraSwitch(); }
+//--CAMERA--
+//--COLOR--
+	else if(action=='color' || action=='color_on') { presenter.toggleInstanceSolidColor(HOP_ALL, true); colorSwitch(); }
+//--COLOR--
+//--MEASURE--
+	else if(action=='measure' || action=='measure_on') { presenter.enableMeasurementTool(!presenter.isMeasurementToolEnabled()); measureSwitch(); }
+//--MEASURE--
+
+//--SCREENSHOT--
+	else if(action=='screenshot') presenter.saveScreenshot();
+//--SCREENSHOT--
+//--HOTSPOTS--
+else if(action=='hotspot'|| action=='hotspot_on') { presenter.toggleSpotVisibility(HOP_ALL, true); presenter.enableOnHover(!presenter.isOnHoverEnabled()); hotspotSwitch(); }
+//--HOTSPOTS--
+}
+
+//--MEASURE--
+function onEndMeasure(measure) {
+	$('#measure-output').html(measure.toFixed(2) + "mm"); 
+}
+//--MEASURE--
+
+function onPickedSpot(id) {
+  switch(id) {
+     case 'volto'   : presenter.animateToTrackballPosition([-89.77,32.71,0.09,0.18,-0.002,0.45]); 
+	 document.getElementById("descrizione").innerHTML = "Il viso segnato dall'età è ritratto con grande naturalismo; lo sguardo, carico di devozione e dolore, è rivolto in alto verso il busto del defunto."; break;
+     case 'croce' : presenter.animateToTrackballPosition([-79.1,7.6,0.1,0.08,0.13,0.48]); 
+	 document.getElementById("descrizione").innerHTML = "Con la mano destra, si porta una croce al petto, in segno di forte devozione religiosa."; break;
+	 case 'rosario' : presenter.animateToTrackballPosition([-55.6,13.7,-0.04,-0.2,0.14,0.48]);
+	document.getElementById("descrizione").innerHTML = "Con la mano sinistra tiene il segno di un libro di preghiere; mentre intorno al polso porta un rosario.";	 break;	 
+	 case 'scialle' : presenter.animateToTrackballPosition([82.9,23.03,-0.1,-0.12,0.11,0.77]);
+	document.getElementById("descrizione").innerHTML = "Intorno alle spalle e alla vita indossa uno scialle in pizzo, elemento tipico dell'abbigliamento femminile dell'epoca, che è reso dal Sartorio con grande virtuosismo di particolari.";break;
+	 case 'capelli' : presenter.animateToTrackballPosition([66.99,-2.57,0.097,0.24,0.003,0.35]);
+	document.getElementById("descrizione").innerHTML = "I capelli sono raccolti in un'elegante crocchia, anch'essa acconciatura tipica  delle donne anziane in Sardegna.";	 break;
+  }
+}
+
+
+$(document).ready(function(){
+	init3dhop();
+
+	setup3dhop();
+});
+</script>
+</html>
